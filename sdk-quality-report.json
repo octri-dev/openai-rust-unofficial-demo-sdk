@@ -1,0 +1,3211 @@
+{
+  "language": "rust",
+  "operations": 376,
+  "operationCount": 376,
+  "operationIdentities": [
+    {
+      "publicOperationId": "acceptLiveSession",
+      "wireOperationId": "acceptLiveSession",
+      "method": "post",
+      "path": "/live/sessions/{session_id}/accept",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "acceptRealtimeCall",
+      "wireOperationId": "acceptRealtimeCall",
+      "method": "post",
+      "path": "/realtime/calls/{call_id}/accept",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "activateOrganizationCertificates",
+      "wireOperationId": "activateOrganizationCertificates",
+      "method": "post",
+      "path": "/organization/certificates/activate",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "activateProjectCertificates",
+      "wireOperationId": "activateProjectCertificates",
+      "method": "post",
+      "path": "/organization/projects/{project_id}/certificates/activate",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "addanexternalkeyconfigforanorganization",
+      "wireOperationId": "Addanexternalkeyconfigforanorganization",
+      "method": "post",
+      "path": "/organization/external_keys",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "addGroupUser",
+      "wireOperationId": "addGroupUser",
+      "method": "post",
+      "path": "/organization/groups/{group_id}/users",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "addProjectGroup",
+      "wireOperationId": "addProjectGroup",
+      "method": "post",
+      "path": "/organization/projects/{project_id}/groups",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "addUploadPart",
+      "wireOperationId": "addUploadPart",
+      "method": "post",
+      "path": "/uploads/{upload_id}/parts",
+      "mode": "normal",
+      "requestMediaType": "multipart/form-data"
+    },
+    {
+      "publicOperationId": "adminApiKeysCreate",
+      "wireOperationId": "adminApiKeysCreate",
+      "method": "post",
+      "path": "/organization/admin_api_keys",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "adminApiKeysDelete",
+      "wireOperationId": "adminApiKeysDelete",
+      "method": "delete",
+      "path": "/organization/admin_api_keys/{key_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "adminApiKeysGet",
+      "wireOperationId": "adminApiKeysGet",
+      "method": "get",
+      "path": "/organization/admin_api_keys/{key_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "adminApiKeysList",
+      "wireOperationId": "adminApiKeysList",
+      "method": "get",
+      "path": "/organization/admin_api_keys",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "archiveProject",
+      "wireOperationId": "archiveProject",
+      "method": "post",
+      "path": "/organization/projects/{project_id}/archive",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "assignGroupRole",
+      "wireOperationId": "assignGroupRole",
+      "method": "post",
+      "path": "/organization/groups/{group_id}/roles",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "assignProjectGroupRole",
+      "wireOperationId": "assignProjectGroupRole",
+      "method": "post",
+      "path": "/projects/{project_id}/groups/{group_id}/roles",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "assignProjectUserRole",
+      "wireOperationId": "assignProjectUserRole",
+      "method": "post",
+      "path": "/projects/{project_id}/users/{user_id}/roles",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "assignUserRole",
+      "wireOperationId": "assignUserRole",
+      "method": "post",
+      "path": "/organization/users/{user_id}/roles",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "betaCancelResponse",
+      "wireOperationId": "beta_cancelResponse",
+      "method": "post",
+      "path": "/responses/{response_id}/cancel?beta=true",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "betaCompactconversation",
+      "wireOperationId": "beta_Compactconversation",
+      "method": "post",
+      "path": "/responses/compact?beta=true",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "betaCreateResponse",
+      "wireOperationId": "beta_createResponse",
+      "method": "post",
+      "path": "/responses?beta=true",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "betaCreateResponseStream",
+      "wireOperationId": "beta_createResponse",
+      "method": "post",
+      "path": "/responses?beta=true",
+      "mode": "stream",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "betaDeleteResponse",
+      "wireOperationId": "beta_deleteResponse",
+      "method": "delete",
+      "path": "/responses/{response_id}?beta=true",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "betaGetinputtokencounts",
+      "wireOperationId": "beta_Getinputtokencounts",
+      "method": "post",
+      "path": "/responses/input_tokens?beta=true",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "betaGetResponse",
+      "wireOperationId": "beta_getResponse",
+      "method": "get",
+      "path": "/responses/{response_id}?beta=true",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "betaGetResponseStream",
+      "wireOperationId": "beta_getResponse",
+      "method": "get",
+      "path": "/responses/{response_id}?beta=true",
+      "mode": "stream",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "betaListInputItems",
+      "wireOperationId": "beta_listInputItems",
+      "method": "get",
+      "path": "/responses/{response_id}/input_items?beta=true",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "cancelBatch",
+      "wireOperationId": "cancelBatch",
+      "method": "post",
+      "path": "/batches/{batch_id}/cancel",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "cancelChatSessionMethod",
+      "wireOperationId": "CancelChatSessionMethod",
+      "method": "post",
+      "path": "/chatkit/sessions/{session_id}/cancel",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "cancelEvalRun",
+      "wireOperationId": "cancelEvalRun",
+      "method": "post",
+      "path": "/evals/{eval_id}/runs/{run_id}/cancel",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "cancelFineTuningJob",
+      "wireOperationId": "cancelFineTuningJob",
+      "method": "post",
+      "path": "/fine_tuning/jobs/{fine_tuning_job_id}/cancel",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "cancelResponse",
+      "wireOperationId": "cancelResponse",
+      "method": "post",
+      "path": "/responses/{response_id}/cancel",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "cancelRun",
+      "wireOperationId": "cancelRun",
+      "method": "post",
+      "path": "/threads/{thread_id}/runs/{run_id}/cancel",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "cancelUpload",
+      "wireOperationId": "cancelUpload",
+      "method": "post",
+      "path": "/uploads/{upload_id}/cancel",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "cancelVectorStoreFileBatch",
+      "wireOperationId": "cancelVectorStoreFileBatch",
+      "method": "post",
+      "path": "/vector_stores/{vector_store_id}/file_batches/{batch_id}/cancel",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "compactconversation",
+      "wireOperationId": "Compactconversation",
+      "method": "post",
+      "path": "/responses/compact",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "completeUpload",
+      "wireOperationId": "completeUpload",
+      "method": "post",
+      "path": "/uploads/{upload_id}/complete",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createAgent",
+      "wireOperationId": "createAgent",
+      "method": "post",
+      "path": "/agents",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createAgentAutomation",
+      "wireOperationId": "createAgentAutomation",
+      "method": "post",
+      "path": "/agents/automations",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createAgentAutomationInvocation",
+      "wireOperationId": "createAgentAutomationInvocation",
+      "method": "post",
+      "path": "/agents/automations/{automation_id}/invocations",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "createAgentEnvironment",
+      "wireOperationId": "createAgentEnvironment",
+      "method": "post",
+      "path": "/agents/environments",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createAgentEnvironmentFile",
+      "wireOperationId": "createAgentEnvironmentFile",
+      "method": "post",
+      "path": "/agents/environments/{environment_id}/files",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createAgentEnvironmentTemplate",
+      "wireOperationId": "createAgentEnvironmentTemplate",
+      "method": "post",
+      "path": "/agents/environments/templates",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createAgentSession",
+      "wireOperationId": "createAgentSession",
+      "method": "post",
+      "path": "/agents/sessions",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createAgentSessionEvents",
+      "wireOperationId": "createAgentSessionEvents",
+      "method": "post",
+      "path": "/agents/sessions/{session_id}/events",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createAgentSessionStream",
+      "wireOperationId": "createAgentSession",
+      "method": "post",
+      "path": "/agents/sessions",
+      "mode": "stream",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createanApIkeyforaserviceaccount",
+      "wireOperationId": "CreateanAPIkeyforaserviceaccount",
+      "method": "post",
+      "path": "/organization/projects/{project_id}/service_accounts/{service_account_id}/api_keys",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createanexternalstorageconfiguration",
+      "wireOperationId": "Createanexternalstorageconfiguration",
+      "method": "post",
+      "path": "/organization/external_storage",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createAssistant",
+      "wireOperationId": "createAssistant",
+      "method": "post",
+      "path": "/assistants",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createBatch",
+      "wireOperationId": "createBatch",
+      "method": "post",
+      "path": "/batches",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createChatCompletion",
+      "wireOperationId": "createChatCompletion",
+      "method": "post",
+      "path": "/chat/completions",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createChatCompletionStream",
+      "wireOperationId": "createChatCompletion",
+      "method": "post",
+      "path": "/chat/completions",
+      "mode": "stream",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createChatSessionMethod",
+      "wireOperationId": "CreateChatSessionMethod",
+      "method": "post",
+      "path": "/chatkit/sessions",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createCompletion",
+      "wireOperationId": "createCompletion",
+      "method": "post",
+      "path": "/completions",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createCompletionStream",
+      "wireOperationId": "createCompletion",
+      "method": "post",
+      "path": "/completions",
+      "mode": "stream",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createContainer",
+      "wireOperationId": "CreateContainer",
+      "method": "post",
+      "path": "/containers",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createContainerFile",
+      "wireOperationId": "CreateContainerFile",
+      "method": "post",
+      "path": "/containers/{container_id}/files",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createcontentprovenancecheck",
+      "wireOperationId": "Createcontentprovenancecheck",
+      "method": "post",
+      "path": "/content_provenance_checks",
+      "mode": "normal",
+      "requestMediaType": "multipart/form-data"
+    },
+    {
+      "publicOperationId": "createConversation",
+      "wireOperationId": "createConversation",
+      "method": "post",
+      "path": "/conversations",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createConversationItems",
+      "wireOperationId": "createConversationItems",
+      "method": "post",
+      "path": "/conversations/{conversation_id}/items",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createDecision",
+      "wireOperationId": "createDecision",
+      "method": "post",
+      "path": "/decisions",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createEmbedding",
+      "wireOperationId": "createEmbedding",
+      "method": "post",
+      "path": "/embeddings",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createEval",
+      "wireOperationId": "createEval",
+      "method": "post",
+      "path": "/evals",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createEvalRun",
+      "wireOperationId": "createEvalRun",
+      "method": "post",
+      "path": "/evals/{eval_id}/runs",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createFile",
+      "wireOperationId": "createFile",
+      "method": "post",
+      "path": "/files",
+      "mode": "normal",
+      "requestMediaType": "multipart/form-data"
+    },
+    {
+      "publicOperationId": "createFineTuningCheckpointPermission",
+      "wireOperationId": "createFineTuningCheckpointPermission",
+      "method": "post",
+      "path": "/fine_tuning/checkpoints/{fine_tuned_model_checkpoint}/permissions",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createFineTuningJob",
+      "wireOperationId": "createFineTuningJob",
+      "method": "post",
+      "path": "/fine_tuning/jobs",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createGroup",
+      "wireOperationId": "createGroup",
+      "method": "post",
+      "path": "/organization/groups",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createImage",
+      "wireOperationId": "createImage",
+      "method": "post",
+      "path": "/images/generations",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createImageEdit",
+      "wireOperationId": "createImageEdit",
+      "method": "post",
+      "path": "/images/edits",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createImageEditStream",
+      "wireOperationId": "createImageEdit",
+      "method": "post",
+      "path": "/images/edits",
+      "mode": "stream",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createImageStream",
+      "wireOperationId": "createImage",
+      "method": "post",
+      "path": "/images/generations",
+      "mode": "stream",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createImageVariation",
+      "wireOperationId": "createImageVariation",
+      "method": "post",
+      "path": "/images/variations",
+      "mode": "normal",
+      "requestMediaType": "multipart/form-data"
+    },
+    {
+      "publicOperationId": "createLive",
+      "wireOperationId": "createLive",
+      "method": "post",
+      "path": "/live/sessions",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createMessage",
+      "wireOperationId": "createMessage",
+      "method": "post",
+      "path": "/threads/{thread_id}/messages",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createModeration",
+      "wireOperationId": "createModeration",
+      "method": "post",
+      "path": "/moderations",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createOrganizationSpendAlert",
+      "wireOperationId": "createOrganizationSpendAlert",
+      "method": "post",
+      "path": "/organization/spend_alerts",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createProject",
+      "wireOperationId": "createProject",
+      "method": "post",
+      "path": "/organization/projects",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createProjectRole",
+      "wireOperationId": "createProjectRole",
+      "method": "post",
+      "path": "/projects/{project_id}/roles",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createProjectServiceAccount",
+      "wireOperationId": "createProjectServiceAccount",
+      "method": "post",
+      "path": "/organization/projects/{project_id}/service_accounts",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createProjectSpendAlert",
+      "wireOperationId": "createProjectSpendAlert",
+      "method": "post",
+      "path": "/organization/projects/{project_id}/spend_alerts",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createProjectUser",
+      "wireOperationId": "createProjectUser",
+      "method": "post",
+      "path": "/organization/projects/{project_id}/users",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createRealtimeCall",
+      "wireOperationId": "createRealtimeCall",
+      "method": "post",
+      "path": "/realtime/calls",
+      "mode": "normal",
+      "requestMediaType": "multipart/form-data"
+    },
+    {
+      "publicOperationId": "createRealtimeClientSecret",
+      "wireOperationId": "createRealtimeClientSecret",
+      "method": "post",
+      "path": "/realtime/client_secrets",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createRealtimeSession",
+      "wireOperationId": "createRealtimeSession",
+      "method": "post",
+      "path": "/realtime/sessions",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createRealtimeTranscriptionSession",
+      "wireOperationId": "createRealtimeTranscriptionSession",
+      "method": "post",
+      "path": "/realtime/transcription_sessions",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createRealtimeTranslationClientSecret",
+      "wireOperationId": "createRealtimeTranslationClientSecret",
+      "method": "post",
+      "path": "/realtime/translations/client_secrets",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createResponse",
+      "wireOperationId": "createResponse",
+      "method": "post",
+      "path": "/responses",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createResponseStream",
+      "wireOperationId": "createResponse",
+      "method": "post",
+      "path": "/responses",
+      "mode": "stream",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createRole",
+      "wireOperationId": "createRole",
+      "method": "post",
+      "path": "/organization/roles",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createRun",
+      "wireOperationId": "createRun",
+      "method": "post",
+      "path": "/threads/{thread_id}/runs",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createRunStream",
+      "wireOperationId": "createRun",
+      "method": "post",
+      "path": "/threads/{thread_id}/runs",
+      "mode": "stream",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createSkill",
+      "wireOperationId": "CreateSkill",
+      "method": "post",
+      "path": "/skills",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createSkillVersion",
+      "wireOperationId": "CreateSkillVersion",
+      "method": "post",
+      "path": "/skills/{skill_id}/versions",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createSpeech",
+      "wireOperationId": "createSpeech",
+      "method": "post",
+      "path": "/audio/speech",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createSpeechStream",
+      "wireOperationId": "createSpeech",
+      "method": "post",
+      "path": "/audio/speech",
+      "mode": "stream",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createThread",
+      "wireOperationId": "createThread",
+      "method": "post",
+      "path": "/threads",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createThreadAndRun",
+      "wireOperationId": "createThreadAndRun",
+      "method": "post",
+      "path": "/threads/runs",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createThreadAndRunStream",
+      "wireOperationId": "createThreadAndRun",
+      "method": "post",
+      "path": "/threads/runs",
+      "mode": "stream",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createTranscription",
+      "wireOperationId": "createTranscription",
+      "method": "post",
+      "path": "/audio/transcriptions",
+      "mode": "normal",
+      "requestMediaType": "multipart/form-data"
+    },
+    {
+      "publicOperationId": "createTranscriptionStream",
+      "wireOperationId": "createTranscription",
+      "method": "post",
+      "path": "/audio/transcriptions",
+      "mode": "stream",
+      "requestMediaType": "multipart/form-data"
+    },
+    {
+      "publicOperationId": "createTranslation",
+      "wireOperationId": "createTranslation",
+      "method": "post",
+      "path": "/audio/translations",
+      "mode": "normal",
+      "requestMediaType": "multipart/form-data"
+    },
+    {
+      "publicOperationId": "createUpload",
+      "wireOperationId": "createUpload",
+      "method": "post",
+      "path": "/uploads",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createVault",
+      "wireOperationId": "createVault",
+      "method": "post",
+      "path": "/vaults",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createVaultCredential",
+      "wireOperationId": "createVaultCredential",
+      "method": "post",
+      "path": "/vaults/{vault_id}/credentials",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createVectorStore",
+      "wireOperationId": "createVectorStore",
+      "method": "post",
+      "path": "/vector_stores",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createVectorStoreFile",
+      "wireOperationId": "createVectorStoreFile",
+      "method": "post",
+      "path": "/vector_stores/{vector_store_id}/files",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createVectorStoreFileBatch",
+      "wireOperationId": "createVectorStoreFileBatch",
+      "method": "post",
+      "path": "/vector_stores/{vector_store_id}/file_batches",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createVideo",
+      "wireOperationId": "createVideo",
+      "method": "post",
+      "path": "/videos",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createVideoCharacter",
+      "wireOperationId": "CreateVideoCharacter",
+      "method": "post",
+      "path": "/videos/characters",
+      "mode": "normal",
+      "requestMediaType": "multipart/form-data"
+    },
+    {
+      "publicOperationId": "createVideoEdit",
+      "wireOperationId": "CreateVideoEdit",
+      "method": "post",
+      "path": "/videos/edits",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createVideoExtend",
+      "wireOperationId": "CreateVideoExtend",
+      "method": "post",
+      "path": "/videos/extensions",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createVideoRemix",
+      "wireOperationId": "CreateVideoRemix",
+      "method": "post",
+      "path": "/videos/{video_id}/remix",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createVoice",
+      "wireOperationId": "createVoice",
+      "method": "post",
+      "path": "/audio/voices",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "createVoiceConsent",
+      "wireOperationId": "createVoiceConsent",
+      "method": "post",
+      "path": "/audio/voice_consents",
+      "mode": "normal",
+      "requestMediaType": "multipart/form-data"
+    },
+    {
+      "publicOperationId": "createWebhookEndpoint",
+      "wireOperationId": "CreateWebhookEndpoint",
+      "method": "post",
+      "path": "/webhook_endpoints",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "deactivateOrganizationCertificates",
+      "wireOperationId": "deactivateOrganizationCertificates",
+      "method": "post",
+      "path": "/organization/certificates/deactivate",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "deactivateProjectCertificates",
+      "wireOperationId": "deactivateProjectCertificates",
+      "method": "post",
+      "path": "/organization/projects/{project_id}/certificates/deactivate",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "deleteAgent",
+      "wireOperationId": "deleteAgent",
+      "method": "delete",
+      "path": "/agents/{agent_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteAgentAutomation",
+      "wireOperationId": "deleteAgentAutomation",
+      "method": "delete",
+      "path": "/agents/automations/{automation_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteAgentEnvironmentTemplate",
+      "wireOperationId": "deleteAgentEnvironmentTemplate",
+      "method": "delete",
+      "path": "/agents/environments/templates/{environment_template_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteAgentSession",
+      "wireOperationId": "deleteAgentSession",
+      "method": "delete",
+      "path": "/agents/sessions/{session_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteAgentSessionArtifact",
+      "wireOperationId": "deleteAgentSessionArtifact",
+      "method": "delete",
+      "path": "/agents/sessions/{session_id}/artifacts/{artifact_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteanexternalkeyconfigfortheuserSorganization",
+      "wireOperationId": "deleteanexternalkeyconfigfortheuserSorganization",
+      "method": "delete",
+      "path": "/organization/external_keys/{external_key_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteanexternalstorageconfiguration",
+      "wireOperationId": "Deleteanexternalstorageconfiguration",
+      "method": "delete",
+      "path": "/organization/external_storage/{external_storage_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteAssistant",
+      "wireOperationId": "deleteAssistant",
+      "method": "delete",
+      "path": "/assistants/{assistant_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteCertificate",
+      "wireOperationId": "deleteCertificate",
+      "method": "delete",
+      "path": "/organization/certificates/{certificate_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteChatCompletion",
+      "wireOperationId": "deleteChatCompletion",
+      "method": "delete",
+      "path": "/chat/completions/{completion_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteContainer",
+      "wireOperationId": "DeleteContainer",
+      "method": "delete",
+      "path": "/containers/{container_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteContainerFile",
+      "wireOperationId": "DeleteContainerFile",
+      "method": "delete",
+      "path": "/containers/{container_id}/files/{file_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteConversation",
+      "wireOperationId": "deleteConversation",
+      "method": "delete",
+      "path": "/conversations/{conversation_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteConversationItem",
+      "wireOperationId": "deleteConversationItem",
+      "method": "delete",
+      "path": "/conversations/{conversation_id}/items/{item_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteEval",
+      "wireOperationId": "deleteEval",
+      "method": "delete",
+      "path": "/evals/{eval_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteEvalRun",
+      "wireOperationId": "deleteEvalRun",
+      "method": "delete",
+      "path": "/evals/{eval_id}/runs/{run_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteFile",
+      "wireOperationId": "deleteFile",
+      "method": "delete",
+      "path": "/files/{file_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteFineTuningCheckpointPermission",
+      "wireOperationId": "deleteFineTuningCheckpointPermission",
+      "method": "delete",
+      "path": "/fine_tuning/checkpoints/{fine_tuned_model_checkpoint}/permissions/{permission_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteGroup",
+      "wireOperationId": "deleteGroup",
+      "method": "delete",
+      "path": "/organization/groups/{group_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteInvite",
+      "wireOperationId": "deleteInvite",
+      "method": "delete",
+      "path": "/organization/invites/{invite_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteMessage",
+      "wireOperationId": "deleteMessage",
+      "method": "delete",
+      "path": "/threads/{thread_id}/messages/{message_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteModel",
+      "wireOperationId": "deleteModel",
+      "method": "delete",
+      "path": "/models/{model}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteOrganizationSpendAlert",
+      "wireOperationId": "deleteOrganizationSpendAlert",
+      "method": "delete",
+      "path": "/organization/spend_alerts/{alert_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteorganizationspendlimit",
+      "wireOperationId": "Deleteorganizationspendlimit",
+      "method": "delete",
+      "path": "/organization/spend_limit",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteProjectApiKey",
+      "wireOperationId": "deleteProjectApiKey",
+      "method": "delete",
+      "path": "/organization/projects/{project_id}/api_keys/{api_key_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteProjectModelPermissions",
+      "wireOperationId": "deleteProjectModelPermissions",
+      "method": "delete",
+      "path": "/organization/projects/{project_id}/model_permissions",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteProjectRole",
+      "wireOperationId": "deleteProjectRole",
+      "method": "delete",
+      "path": "/projects/{project_id}/roles/{role_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteProjectServiceAccount",
+      "wireOperationId": "deleteProjectServiceAccount",
+      "method": "delete",
+      "path": "/organization/projects/{project_id}/service_accounts/{service_account_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteProjectSpendAlert",
+      "wireOperationId": "deleteProjectSpendAlert",
+      "method": "delete",
+      "path": "/organization/projects/{project_id}/spend_alerts/{alert_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteprojectspendlimit",
+      "wireOperationId": "Deleteprojectspendlimit",
+      "method": "delete",
+      "path": "/organization/projects/{project_id}/spend_limit",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteProjectUser",
+      "wireOperationId": "deleteProjectUser",
+      "method": "delete",
+      "path": "/organization/projects/{project_id}/users/{user_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteResponse",
+      "wireOperationId": "deleteResponse",
+      "method": "delete",
+      "path": "/responses/{response_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteRole",
+      "wireOperationId": "deleteRole",
+      "method": "delete",
+      "path": "/organization/roles/{role_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteSkill",
+      "wireOperationId": "DeleteSkill",
+      "method": "delete",
+      "path": "/skills/{skill_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteSkillVersion",
+      "wireOperationId": "DeleteSkillVersion",
+      "method": "delete",
+      "path": "/skills/{skill_id}/versions/{version}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteThread",
+      "wireOperationId": "deleteThread",
+      "method": "delete",
+      "path": "/threads/{thread_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteThreadMethod",
+      "wireOperationId": "DeleteThreadMethod",
+      "method": "delete",
+      "path": "/chatkit/threads/{thread_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteUser",
+      "wireOperationId": "deleteUser",
+      "method": "delete",
+      "path": "/organization/users/{user_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteVault",
+      "wireOperationId": "deleteVault",
+      "method": "delete",
+      "path": "/vaults/{vault_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteVaultCredential",
+      "wireOperationId": "deleteVaultCredential",
+      "method": "delete",
+      "path": "/vaults/{vault_id}/credentials/{credential_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteVectorStore",
+      "wireOperationId": "deleteVectorStore",
+      "method": "delete",
+      "path": "/vector_stores/{vector_store_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteVectorStoreFile",
+      "wireOperationId": "deleteVectorStoreFile",
+      "method": "delete",
+      "path": "/vector_stores/{vector_store_id}/files/{file_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteVideo",
+      "wireOperationId": "DeleteVideo",
+      "method": "delete",
+      "path": "/videos/{video_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteVoice",
+      "wireOperationId": "deleteVoice",
+      "method": "delete",
+      "path": "/audio/voices/{voice_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteVoiceConsent",
+      "wireOperationId": "deleteVoiceConsent",
+      "method": "delete",
+      "path": "/audio/voice_consents/{consent_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteWebhookEndpoint",
+      "wireOperationId": "DeleteWebhookEndpoint",
+      "method": "delete",
+      "path": "/webhook_endpoints/{webhook_endpoint_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "downloadFile",
+      "wireOperationId": "downloadFile",
+      "method": "get",
+      "path": "/files/{file_id}/content",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "downloadLiveRecording",
+      "wireOperationId": "downloadLiveRecording",
+      "method": "get",
+      "path": "/live/sessions/{session_id}/content",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "forkLiveSession",
+      "wireOperationId": "forkLiveSession",
+      "method": "post",
+      "path": "/live/sessions/{session_id}/fork",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "getAgentAutomation",
+      "wireOperationId": "getAgentAutomation",
+      "method": "get",
+      "path": "/agents/automations/{automation_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getAgentAutomationInvocation",
+      "wireOperationId": "getAgentAutomationInvocation",
+      "method": "get",
+      "path": "/agents/automations/{automation_id}/invocations/{invocation_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getanexternalstorageconfiguration",
+      "wireOperationId": "Getanexternalstorageconfiguration",
+      "method": "get",
+      "path": "/organization/external_storage/{external_storage_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getAssistant",
+      "wireOperationId": "getAssistant",
+      "method": "get",
+      "path": "/assistants/{assistant_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getCertificate",
+      "wireOperationId": "getCertificate",
+      "method": "get",
+      "path": "/organization/certificates/{certificate_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getChatCompletion",
+      "wireOperationId": "getChatCompletion",
+      "method": "get",
+      "path": "/chat/completions/{completion_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getChatCompletionMessages",
+      "wireOperationId": "getChatCompletionMessages",
+      "method": "get",
+      "path": "/chat/completions/{completion_id}/messages",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getConversation",
+      "wireOperationId": "getConversation",
+      "method": "get",
+      "path": "/conversations/{conversation_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getConversationItem",
+      "wireOperationId": "getConversationItem",
+      "method": "get",
+      "path": "/conversations/{conversation_id}/items/{item_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getEval",
+      "wireOperationId": "getEval",
+      "method": "get",
+      "path": "/evals/{eval_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getEvalRun",
+      "wireOperationId": "getEvalRun",
+      "method": "get",
+      "path": "/evals/{eval_id}/runs/{run_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getEvalRunOutputItem",
+      "wireOperationId": "getEvalRunOutputItem",
+      "method": "get",
+      "path": "/evals/{eval_id}/runs/{run_id}/output_items/{output_item_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getEvalRunOutputItems",
+      "wireOperationId": "getEvalRunOutputItems",
+      "method": "get",
+      "path": "/evals/{eval_id}/runs/{run_id}/output_items",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getEvalRuns",
+      "wireOperationId": "getEvalRuns",
+      "method": "get",
+      "path": "/evals/{eval_id}/runs",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getinputtokencounts",
+      "wireOperationId": "Getinputtokencounts",
+      "method": "post",
+      "path": "/responses/input_tokens",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "getMessage",
+      "wireOperationId": "getMessage",
+      "method": "get",
+      "path": "/threads/{thread_id}/messages/{message_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getorganizationspendlimit",
+      "wireOperationId": "Getorganizationspendlimit",
+      "method": "get",
+      "path": "/organization/spend_limit",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getprojectsafetyalert",
+      "wireOperationId": "Getprojectsafetyalert",
+      "method": "get",
+      "path": "/safety/alerts/{id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getprojectspendlimit",
+      "wireOperationId": "Getprojectspendlimit",
+      "method": "get",
+      "path": "/organization/projects/{project_id}/spend_limit",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getResponse",
+      "wireOperationId": "getResponse",
+      "method": "get",
+      "path": "/responses/{response_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getResponseStream",
+      "wireOperationId": "getResponse",
+      "method": "get",
+      "path": "/responses/{response_id}",
+      "mode": "stream",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getRun",
+      "wireOperationId": "getRun",
+      "method": "get",
+      "path": "/threads/{thread_id}/runs/{run_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getRunStep",
+      "wireOperationId": "getRunStep",
+      "method": "get",
+      "path": "/threads/{thread_id}/runs/{run_id}/steps/{step_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getsafetycase",
+      "wireOperationId": "Getsafetycase",
+      "method": "get",
+      "path": "/safety/cases/{id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getSkill",
+      "wireOperationId": "GetSkill",
+      "method": "get",
+      "path": "/skills/{skill_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getSkillContent",
+      "wireOperationId": "GetSkillContent",
+      "method": "get",
+      "path": "/skills/{skill_id}/content",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getSkillVersion",
+      "wireOperationId": "GetSkillVersion",
+      "method": "get",
+      "path": "/skills/{skill_id}/versions/{version}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getSkillVersionContent",
+      "wireOperationId": "GetSkillVersionContent",
+      "method": "get",
+      "path": "/skills/{skill_id}/versions/{version}/content",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getThread",
+      "wireOperationId": "getThread",
+      "method": "get",
+      "path": "/threads/{thread_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getThreadMethod",
+      "wireOperationId": "GetThreadMethod",
+      "method": "get",
+      "path": "/chatkit/threads/{thread_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getVectorStore",
+      "wireOperationId": "getVectorStore",
+      "method": "get",
+      "path": "/vector_stores/{vector_store_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getVectorStoreFile",
+      "wireOperationId": "getVectorStoreFile",
+      "method": "get",
+      "path": "/vector_stores/{vector_store_id}/files/{file_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getVectorStoreFileBatch",
+      "wireOperationId": "getVectorStoreFileBatch",
+      "method": "get",
+      "path": "/vector_stores/{vector_store_id}/file_batches/{batch_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getVideo",
+      "wireOperationId": "GetVideo",
+      "method": "get",
+      "path": "/videos/{video_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getVideoCharacter",
+      "wireOperationId": "GetVideoCharacter",
+      "method": "get",
+      "path": "/videos/characters/{character_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getVoiceConsent",
+      "wireOperationId": "getVoiceConsent",
+      "method": "get",
+      "path": "/audio/voice_consents/{consent_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "hangupLiveSession",
+      "wireOperationId": "hangupLiveSession",
+      "method": "post",
+      "path": "/live/sessions/{session_id}/hangup",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "hangupRealtimeCall",
+      "wireOperationId": "hangupRealtimeCall",
+      "method": "post",
+      "path": "/realtime/calls/{call_id}/hangup",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "inviteUser",
+      "wireOperationId": "inviteUser",
+      "method": "post",
+      "path": "/organization/invites",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "listAgentAutomationInvocations",
+      "wireOperationId": "listAgentAutomationInvocations",
+      "method": "get",
+      "path": "/agents/automations/{automation_id}/invocations",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listAgentAutomations",
+      "wireOperationId": "listAgentAutomations",
+      "method": "get",
+      "path": "/agents/automations",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listAgentEnvironmentFiles",
+      "wireOperationId": "listAgentEnvironmentFiles",
+      "method": "get",
+      "path": "/agents/environments/{environment_id}/files",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listAgentEnvironments",
+      "wireOperationId": "listAgentEnvironments",
+      "method": "get",
+      "path": "/agents/environments",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listAgentEnvironmentTemplates",
+      "wireOperationId": "listAgentEnvironmentTemplates",
+      "method": "get",
+      "path": "/agents/environments/templates",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listAgents",
+      "wireOperationId": "listAgents",
+      "method": "get",
+      "path": "/agents",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listAgentSessionArtifacts",
+      "wireOperationId": "listAgentSessionArtifacts",
+      "method": "get",
+      "path": "/agents/sessions/{session_id}/artifacts",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listAgentSessionEvents",
+      "wireOperationId": "listAgentSessionEvents",
+      "method": "get",
+      "path": "/agents/sessions/{session_id}/events",
+      "mode": "stream",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listAgentSessionItems",
+      "wireOperationId": "listAgentSessionItems",
+      "method": "get",
+      "path": "/agents/sessions/{session_id}/items",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listAgentSessions",
+      "wireOperationId": "listAgentSessions",
+      "method": "get",
+      "path": "/agents/sessions",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listAgentSessionSubagentItems",
+      "wireOperationId": "listAgentSessionSubagentItems",
+      "method": "get",
+      "path": "/agents/sessions/{session_id}/subagents/{subagent_id}/items",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listAgentSessionSubagents",
+      "wireOperationId": "listAgentSessionSubagents",
+      "method": "get",
+      "path": "/agents/sessions/{session_id}/subagents",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listAgentSessionSubagentTurnItems",
+      "wireOperationId": "listAgentSessionSubagentTurnItems",
+      "method": "get",
+      "path": "/agents/sessions/{session_id}/subagents/{subagent_id}/turns/{turn_id}/items",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listAgentSessionSubagentTurns",
+      "wireOperationId": "listAgentSessionSubagentTurns",
+      "method": "get",
+      "path": "/agents/sessions/{session_id}/subagents/{subagent_id}/turns",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listAgentSessionTraces",
+      "wireOperationId": "listAgentSessionTraces",
+      "method": "get",
+      "path": "/agents/sessions/{session_id}/traces",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listAgentSessionTurnItems",
+      "wireOperationId": "listAgentSessionTurnItems",
+      "method": "get",
+      "path": "/agents/sessions/{session_id}/turns/{turn_id}/items",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listAgentSessionTurns",
+      "wireOperationId": "listAgentSessionTurns",
+      "method": "get",
+      "path": "/agents/sessions/{session_id}/turns",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listAssistants",
+      "wireOperationId": "listAssistants",
+      "method": "get",
+      "path": "/assistants",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listAuditLogs",
+      "wireOperationId": "listAuditLogs",
+      "method": "get",
+      "path": "/organization/audit_logs",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listBatches",
+      "wireOperationId": "listBatches",
+      "method": "get",
+      "path": "/batches",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listChatCompletions",
+      "wireOperationId": "listChatCompletions",
+      "method": "get",
+      "path": "/chat/completions",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listContainerFiles",
+      "wireOperationId": "ListContainerFiles",
+      "method": "get",
+      "path": "/containers/{container_id}/files",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listContainers",
+      "wireOperationId": "ListContainers",
+      "method": "get",
+      "path": "/containers",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listConversationItems",
+      "wireOperationId": "listConversationItems",
+      "method": "get",
+      "path": "/conversations/{conversation_id}/items",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listEvals",
+      "wireOperationId": "listEvals",
+      "method": "get",
+      "path": "/evals",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listexternalstorageconfigurations",
+      "wireOperationId": "Listexternalstorageconfigurations",
+      "method": "get",
+      "path": "/organization/external_storage",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listFiles",
+      "wireOperationId": "listFiles",
+      "method": "get",
+      "path": "/files",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listFilesInVectorStoreBatch",
+      "wireOperationId": "listFilesInVectorStoreBatch",
+      "method": "get",
+      "path": "/vector_stores/{vector_store_id}/file_batches/{batch_id}/files",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listFineTuningCheckpointPermissions",
+      "wireOperationId": "listFineTuningCheckpointPermissions",
+      "method": "get",
+      "path": "/fine_tuning/checkpoints/{fine_tuned_model_checkpoint}/permissions",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listFineTuningEvents",
+      "wireOperationId": "listFineTuningEvents",
+      "method": "get",
+      "path": "/fine_tuning/jobs/{fine_tuning_job_id}/events",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listFineTuningJobCheckpoints",
+      "wireOperationId": "listFineTuningJobCheckpoints",
+      "method": "get",
+      "path": "/fine_tuning/jobs/{fine_tuning_job_id}/checkpoints",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listGroupRoleAssignments",
+      "wireOperationId": "listGroupRoleAssignments",
+      "method": "get",
+      "path": "/organization/groups/{group_id}/roles",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listGroups",
+      "wireOperationId": "listGroups",
+      "method": "get",
+      "path": "/organization/groups",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listGroupUsers",
+      "wireOperationId": "listGroupUsers",
+      "method": "get",
+      "path": "/organization/groups/{group_id}/users",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listInputItems",
+      "wireOperationId": "listInputItems",
+      "method": "get",
+      "path": "/responses/{response_id}/input_items",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listInvites",
+      "wireOperationId": "listInvites",
+      "method": "get",
+      "path": "/organization/invites",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listMessages",
+      "wireOperationId": "listMessages",
+      "method": "get",
+      "path": "/threads/{thread_id}/messages",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listModels",
+      "wireOperationId": "listModels",
+      "method": "get",
+      "path": "/models",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listOrganizationCertificates",
+      "wireOperationId": "listOrganizationCertificates",
+      "method": "get",
+      "path": "/organization/certificates",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listOrganizationSpendAlerts",
+      "wireOperationId": "listOrganizationSpendAlerts",
+      "method": "get",
+      "path": "/organization/spend_alerts",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listPaginatedFineTuningJobs",
+      "wireOperationId": "listPaginatedFineTuningJobs",
+      "method": "get",
+      "path": "/fine_tuning/jobs",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listProjectApiKeys",
+      "wireOperationId": "listProjectApiKeys",
+      "method": "get",
+      "path": "/organization/projects/{project_id}/api_keys",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listProjectCertificates",
+      "wireOperationId": "listProjectCertificates",
+      "method": "get",
+      "path": "/organization/projects/{project_id}/certificates",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listProjectGroupRoleAssignments",
+      "wireOperationId": "listProjectGroupRoleAssignments",
+      "method": "get",
+      "path": "/projects/{project_id}/groups/{group_id}/roles",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listProjectGroups",
+      "wireOperationId": "listProjectGroups",
+      "method": "get",
+      "path": "/organization/projects/{project_id}/groups",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listProjectRateLimits",
+      "wireOperationId": "listProjectRateLimits",
+      "method": "get",
+      "path": "/organization/projects/{project_id}/rate_limits",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listProjectRoles",
+      "wireOperationId": "listProjectRoles",
+      "method": "get",
+      "path": "/projects/{project_id}/roles",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listProjects",
+      "wireOperationId": "listProjects",
+      "method": "get",
+      "path": "/organization/projects",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listProjectServiceAccounts",
+      "wireOperationId": "listProjectServiceAccounts",
+      "method": "get",
+      "path": "/organization/projects/{project_id}/service_accounts",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listProjectSpendAlerts",
+      "wireOperationId": "listProjectSpendAlerts",
+      "method": "get",
+      "path": "/organization/projects/{project_id}/spend_alerts",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listProjectUserRoleAssignments",
+      "wireOperationId": "listProjectUserRoleAssignments",
+      "method": "get",
+      "path": "/projects/{project_id}/users/{user_id}/roles",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listProjectUsers",
+      "wireOperationId": "listProjectUsers",
+      "method": "get",
+      "path": "/organization/projects/{project_id}/users",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listRoles",
+      "wireOperationId": "listRoles",
+      "method": "get",
+      "path": "/organization/roles",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listRuns",
+      "wireOperationId": "listRuns",
+      "method": "get",
+      "path": "/threads/{thread_id}/runs",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listRunSteps",
+      "wireOperationId": "listRunSteps",
+      "method": "get",
+      "path": "/threads/{thread_id}/runs/{run_id}/steps",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listSkills",
+      "wireOperationId": "ListSkills",
+      "method": "get",
+      "path": "/skills",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listSkillVersions",
+      "wireOperationId": "ListSkillVersions",
+      "method": "get",
+      "path": "/skills/{skill_id}/versions",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listtheexternalkeyconfigsregisteredontheuserSorganization",
+      "wireOperationId": "listtheexternalkeyconfigsregisteredontheuserSorganization",
+      "method": "get",
+      "path": "/organization/external_keys",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listThreadItemsMethod",
+      "wireOperationId": "ListThreadItemsMethod",
+      "method": "get",
+      "path": "/chatkit/threads/{thread_id}/items",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listThreadsMethod",
+      "wireOperationId": "ListThreadsMethod",
+      "method": "get",
+      "path": "/chatkit/threads",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listUserRoleAssignments",
+      "wireOperationId": "listUserRoleAssignments",
+      "method": "get",
+      "path": "/organization/users/{user_id}/roles",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listUsers",
+      "wireOperationId": "listUsers",
+      "method": "get",
+      "path": "/organization/users",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listVaultCredentials",
+      "wireOperationId": "listVaultCredentials",
+      "method": "get",
+      "path": "/vaults/{vault_id}/credentials",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listVaults",
+      "wireOperationId": "listVaults",
+      "method": "get",
+      "path": "/vaults",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listVectorStoreFiles",
+      "wireOperationId": "listVectorStoreFiles",
+      "method": "get",
+      "path": "/vector_stores/{vector_store_id}/files",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listVectorStores",
+      "wireOperationId": "listVectorStores",
+      "method": "get",
+      "path": "/vector_stores",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listVideos",
+      "wireOperationId": "ListVideos",
+      "method": "get",
+      "path": "/videos",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listVoiceConsents",
+      "wireOperationId": "listVoiceConsents",
+      "method": "get",
+      "path": "/audio/voice_consents",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listWebhookEndpoints",
+      "wireOperationId": "ListWebhookEndpoints",
+      "method": "get",
+      "path": "/webhook_endpoints",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "listWebhookEventTypes",
+      "wireOperationId": "ListWebhookEventTypes",
+      "method": "get",
+      "path": "/webhook_event_types",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "modifyAssistant",
+      "wireOperationId": "modifyAssistant",
+      "method": "post",
+      "path": "/assistants/{assistant_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "modifyCertificate",
+      "wireOperationId": "modifyCertificate",
+      "method": "post",
+      "path": "/organization/certificates/{certificate_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "modifyMessage",
+      "wireOperationId": "modifyMessage",
+      "method": "post",
+      "path": "/threads/{thread_id}/messages/{message_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "modifyProject",
+      "wireOperationId": "modifyProject",
+      "method": "post",
+      "path": "/organization/projects/{project_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "modifyProjectUser",
+      "wireOperationId": "modifyProjectUser",
+      "method": "post",
+      "path": "/organization/projects/{project_id}/users/{user_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "modifyRun",
+      "wireOperationId": "modifyRun",
+      "method": "post",
+      "path": "/threads/{thread_id}/runs/{run_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "modifyThread",
+      "wireOperationId": "modifyThread",
+      "method": "post",
+      "path": "/threads/{thread_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "modifyUser",
+      "wireOperationId": "modifyUser",
+      "method": "post",
+      "path": "/organization/users/{user_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "modifyVectorStore",
+      "wireOperationId": "modifyVectorStore",
+      "method": "post",
+      "path": "/vector_stores/{vector_store_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "organizationDecisionsusage",
+      "wireOperationId": "OrganizationDecisionsusage",
+      "method": "get",
+      "path": "/organization/usage/decisions",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "pauseAgentAutomation",
+      "wireOperationId": "pauseAgentAutomation",
+      "method": "post",
+      "path": "/agents/automations/{automation_id}/pause",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "pauseFineTuningJob",
+      "wireOperationId": "pauseFineTuningJob",
+      "method": "post",
+      "path": "/fine_tuning/jobs/{fine_tuning_job_id}/pause",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "referLiveSession",
+      "wireOperationId": "referLiveSession",
+      "method": "post",
+      "path": "/live/sessions/{session_id}/refer",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "referRealtimeCall",
+      "wireOperationId": "referRealtimeCall",
+      "method": "post",
+      "path": "/realtime/calls/{call_id}/refer",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "rejectLiveSession",
+      "wireOperationId": "rejectLiveSession",
+      "method": "post",
+      "path": "/live/sessions/{session_id}/reject",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "rejectRealtimeCall",
+      "wireOperationId": "rejectRealtimeCall",
+      "method": "post",
+      "path": "/realtime/calls/{call_id}/reject",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "removeGroupUser",
+      "wireOperationId": "removeGroupUser",
+      "method": "delete",
+      "path": "/organization/groups/{group_id}/users/{user_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "removeProjectGroup",
+      "wireOperationId": "removeProjectGroup",
+      "method": "delete",
+      "path": "/organization/projects/{project_id}/groups/{group_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "resumeAgentAutomation",
+      "wireOperationId": "resumeAgentAutomation",
+      "method": "post",
+      "path": "/agents/automations/{automation_id}/resume",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "resumeFineTuningJob",
+      "wireOperationId": "resumeFineTuningJob",
+      "method": "post",
+      "path": "/fine_tuning/jobs/{fine_tuning_job_id}/resume",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveAgent",
+      "wireOperationId": "retrieveAgent",
+      "method": "get",
+      "path": "/agents/{agent_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveAgentEnvironment",
+      "wireOperationId": "retrieveAgentEnvironment",
+      "method": "get",
+      "path": "/agents/environments/{environment_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveAgentEnvironmentTemplate",
+      "wireOperationId": "retrieveAgentEnvironmentTemplate",
+      "method": "get",
+      "path": "/agents/environments/templates/{environment_template_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveAgentSession",
+      "wireOperationId": "retrieveAgentSession",
+      "method": "get",
+      "path": "/agents/sessions/{session_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveAgentSessionArtifact",
+      "wireOperationId": "retrieveAgentSessionArtifact",
+      "method": "get",
+      "path": "/agents/sessions/{session_id}/artifacts/{artifact_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveAgentSessionArtifactContent",
+      "wireOperationId": "retrieveAgentSessionArtifactContent",
+      "method": "get",
+      "path": "/agents/sessions/{session_id}/artifacts/{artifact_id}/content",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveAgentSessionSubagent",
+      "wireOperationId": "retrieveAgentSessionSubagent",
+      "method": "get",
+      "path": "/agents/sessions/{session_id}/subagents/{subagent_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveAgentSessionSubagentTurn",
+      "wireOperationId": "retrieveAgentSessionSubagentTurn",
+      "method": "get",
+      "path": "/agents/sessions/{session_id}/subagents/{subagent_id}/turns/{turn_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveAgentSessionTurn",
+      "wireOperationId": "retrieveAgentSessionTurn",
+      "method": "get",
+      "path": "/agents/sessions/{session_id}/turns/{turn_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveanexternalkeyregistration",
+      "wireOperationId": "Retrieveanexternalkeyregistration",
+      "method": "get",
+      "path": "/organization/external_keys/{external_key_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveBatch",
+      "wireOperationId": "retrieveBatch",
+      "method": "get",
+      "path": "/batches/{batch_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveContainer",
+      "wireOperationId": "RetrieveContainer",
+      "method": "get",
+      "path": "/containers/{container_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveContainerFile",
+      "wireOperationId": "RetrieveContainerFile",
+      "method": "get",
+      "path": "/containers/{container_id}/files/{file_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveContainerFileContent",
+      "wireOperationId": "RetrieveContainerFileContent",
+      "method": "get",
+      "path": "/containers/{container_id}/files/{file_id}/content",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveFile",
+      "wireOperationId": "retrieveFile",
+      "method": "get",
+      "path": "/files/{file_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveFineTuningJob",
+      "wireOperationId": "retrieveFineTuningJob",
+      "method": "get",
+      "path": "/fine_tuning/jobs/{fine_tuning_job_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveGroup",
+      "wireOperationId": "retrieveGroup",
+      "method": "get",
+      "path": "/organization/groups/{group_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveGroupRole",
+      "wireOperationId": "retrieveGroupRole",
+      "method": "get",
+      "path": "/organization/groups/{group_id}/roles/{role_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveGroupUser",
+      "wireOperationId": "retrieveGroupUser",
+      "method": "get",
+      "path": "/organization/groups/{group_id}/users/{user_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveInvite",
+      "wireOperationId": "retrieveInvite",
+      "method": "get",
+      "path": "/organization/invites/{invite_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveModel",
+      "wireOperationId": "retrieveModel",
+      "method": "get",
+      "path": "/models/{model}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveOrganizationDataRetention",
+      "wireOperationId": "retrieveOrganizationDataRetention",
+      "method": "get",
+      "path": "/organization/data_retention",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveOrganizationSpendAlert",
+      "wireOperationId": "retrieveOrganizationSpendAlert",
+      "method": "get",
+      "path": "/organization/spend_alerts/{alert_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveProject",
+      "wireOperationId": "retrieveProject",
+      "method": "get",
+      "path": "/organization/projects/{project_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveProjectApiKey",
+      "wireOperationId": "retrieveProjectApiKey",
+      "method": "get",
+      "path": "/organization/projects/{project_id}/api_keys/{api_key_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveProjectDataRetention",
+      "wireOperationId": "retrieveProjectDataRetention",
+      "method": "get",
+      "path": "/organization/projects/{project_id}/data_retention",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveProjectGroup",
+      "wireOperationId": "retrieveProjectGroup",
+      "method": "get",
+      "path": "/organization/projects/{project_id}/groups/{group_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveProjectGroupRole",
+      "wireOperationId": "retrieveProjectGroupRole",
+      "method": "get",
+      "path": "/projects/{project_id}/groups/{group_id}/roles/{role_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveProjectHostedToolPermissions",
+      "wireOperationId": "retrieveProjectHostedToolPermissions",
+      "method": "get",
+      "path": "/organization/projects/{project_id}/hosted_tool_permissions",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveProjectModelPermissions",
+      "wireOperationId": "retrieveProjectModelPermissions",
+      "method": "get",
+      "path": "/organization/projects/{project_id}/model_permissions",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveProjectRole",
+      "wireOperationId": "retrieveProjectRole",
+      "method": "get",
+      "path": "/projects/{project_id}/roles/{role_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveProjectServiceAccount",
+      "wireOperationId": "retrieveProjectServiceAccount",
+      "method": "get",
+      "path": "/organization/projects/{project_id}/service_accounts/{service_account_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveProjectSpendAlert",
+      "wireOperationId": "retrieveProjectSpendAlert",
+      "method": "get",
+      "path": "/organization/projects/{project_id}/spend_alerts/{alert_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveProjectUser",
+      "wireOperationId": "retrieveProjectUser",
+      "method": "get",
+      "path": "/organization/projects/{project_id}/users/{user_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveProjectUserRole",
+      "wireOperationId": "retrieveProjectUserRole",
+      "method": "get",
+      "path": "/projects/{project_id}/users/{user_id}/roles/{role_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveRole",
+      "wireOperationId": "retrieveRole",
+      "method": "get",
+      "path": "/organization/roles/{role_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveUser",
+      "wireOperationId": "retrieveUser",
+      "method": "get",
+      "path": "/organization/users/{user_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveUserRole",
+      "wireOperationId": "retrieveUserRole",
+      "method": "get",
+      "path": "/organization/users/{user_id}/roles/{role_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveVault",
+      "wireOperationId": "retrieveVault",
+      "method": "get",
+      "path": "/vaults/{vault_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveVaultCredential",
+      "wireOperationId": "retrieveVaultCredential",
+      "method": "get",
+      "path": "/vaults/{vault_id}/credentials/{credential_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveVectorStoreFileContent",
+      "wireOperationId": "retrieveVectorStoreFileContent",
+      "method": "get",
+      "path": "/vector_stores/{vector_store_id}/files/{file_id}/content",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveVideoContent",
+      "wireOperationId": "RetrieveVideoContent",
+      "method": "get",
+      "path": "/videos/{video_id}/content",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "retrieveWebhookEndpoint",
+      "wireOperationId": "RetrieveWebhookEndpoint",
+      "method": "get",
+      "path": "/webhook_endpoints/{webhook_endpoint_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "rotateVaultCredential",
+      "wireOperationId": "rotateVaultCredential",
+      "method": "post",
+      "path": "/vaults/{vault_id}/credentials/{credential_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "rotateWebhookEndpointSigningSecret",
+      "wireOperationId": "RotateWebhookEndpointSigningSecret",
+      "method": "post",
+      "path": "/webhook_endpoints/{webhook_endpoint_id}/rotate_secret",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "runGrader",
+      "wireOperationId": "runGrader",
+      "method": "post",
+      "path": "/fine_tuning/alpha/graders/run",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "searchVectorStore",
+      "wireOperationId": "searchVectorStore",
+      "method": "post",
+      "path": "/vector_stores/{vector_store_id}/search",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "submitToolOuputsToRun",
+      "wireOperationId": "submitToolOuputsToRun",
+      "method": "post",
+      "path": "/threads/{thread_id}/runs/{run_id}/submit_tool_outputs",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "submitToolOuputsToRunStream",
+      "wireOperationId": "submitToolOuputsToRun",
+      "method": "post",
+      "path": "/threads/{thread_id}/runs/{run_id}/submit_tool_outputs",
+      "mode": "stream",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "testWebhookEndpoint",
+      "wireOperationId": "TestWebhookEndpoint",
+      "method": "post",
+      "path": "/webhook_endpoints/{webhook_endpoint_id}/test",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "unassignGroupRole",
+      "wireOperationId": "unassignGroupRole",
+      "method": "delete",
+      "path": "/organization/groups/{group_id}/roles/{role_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "unassignProjectGroupRole",
+      "wireOperationId": "unassignProjectGroupRole",
+      "method": "delete",
+      "path": "/projects/{project_id}/groups/{group_id}/roles/{role_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "unassignProjectUserRole",
+      "wireOperationId": "unassignProjectUserRole",
+      "method": "delete",
+      "path": "/projects/{project_id}/users/{user_id}/roles/{role_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "unassignUserRole",
+      "wireOperationId": "unassignUserRole",
+      "method": "delete",
+      "path": "/organization/users/{user_id}/roles/{role_id}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "updateAgent",
+      "wireOperationId": "updateAgent",
+      "method": "post",
+      "path": "/agents/{agent_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateAgentAutomation",
+      "wireOperationId": "updateAgentAutomation",
+      "method": "post",
+      "path": "/agents/automations/{automation_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateAgentEnvironmentTemplate",
+      "wireOperationId": "updateAgentEnvironmentTemplate",
+      "method": "post",
+      "path": "/agents/environments/templates/{environment_template_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateAgentSession",
+      "wireOperationId": "updateAgentSession",
+      "method": "post",
+      "path": "/agents/sessions/{session_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateChatCompletion",
+      "wireOperationId": "updateChatCompletion",
+      "method": "post",
+      "path": "/chat/completions/{completion_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateConversation",
+      "wireOperationId": "updateConversation",
+      "method": "post",
+      "path": "/conversations/{conversation_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateEval",
+      "wireOperationId": "updateEval",
+      "method": "post",
+      "path": "/evals/{eval_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateGroup",
+      "wireOperationId": "updateGroup",
+      "method": "post",
+      "path": "/organization/groups/{group_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateOrganizationDataRetention",
+      "wireOperationId": "updateOrganizationDataRetention",
+      "method": "post",
+      "path": "/organization/data_retention",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateOrganizationSpendAlert",
+      "wireOperationId": "updateOrganizationSpendAlert",
+      "method": "post",
+      "path": "/organization/spend_alerts/{alert_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateorganizationspendlimit",
+      "wireOperationId": "Updateorganizationspendlimit",
+      "method": "post",
+      "path": "/organization/spend_limit",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateProjectApiKey",
+      "wireOperationId": "updateProjectApiKey",
+      "method": "post",
+      "path": "/organization/projects/{project_id}/api_keys/{api_key_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateProjectDataRetention",
+      "wireOperationId": "updateProjectDataRetention",
+      "method": "post",
+      "path": "/organization/projects/{project_id}/data_retention",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateProjectHostedToolPermissions",
+      "wireOperationId": "updateProjectHostedToolPermissions",
+      "method": "post",
+      "path": "/organization/projects/{project_id}/hosted_tool_permissions",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateProjectModelPermissions",
+      "wireOperationId": "updateProjectModelPermissions",
+      "method": "post",
+      "path": "/organization/projects/{project_id}/model_permissions",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateProjectRateLimits",
+      "wireOperationId": "updateProjectRateLimits",
+      "method": "post",
+      "path": "/organization/projects/{project_id}/rate_limits/{rate_limit_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateProjectRole",
+      "wireOperationId": "updateProjectRole",
+      "method": "post",
+      "path": "/projects/{project_id}/roles/{role_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateProjectServiceAccount",
+      "wireOperationId": "updateProjectServiceAccount",
+      "method": "post",
+      "path": "/organization/projects/{project_id}/service_accounts/{service_account_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateProjectSpendAlert",
+      "wireOperationId": "updateProjectSpendAlert",
+      "method": "post",
+      "path": "/organization/projects/{project_id}/spend_alerts/{alert_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateprojectspendlimit",
+      "wireOperationId": "Updateprojectspendlimit",
+      "method": "post",
+      "path": "/organization/projects/{project_id}/spend_limit",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateRole",
+      "wireOperationId": "updateRole",
+      "method": "post",
+      "path": "/organization/roles/{role_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateSkillDefaultVersion",
+      "wireOperationId": "UpdateSkillDefaultVersion",
+      "method": "post",
+      "path": "/skills/{skill_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateVault",
+      "wireOperationId": "updateVault",
+      "method": "post",
+      "path": "/vaults/{vault_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateVectorStoreFileAttributes",
+      "wireOperationId": "updateVectorStoreFileAttributes",
+      "method": "post",
+      "path": "/vector_stores/{vector_store_id}/files/{file_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateVoiceConsent",
+      "wireOperationId": "updateVoiceConsent",
+      "method": "post",
+      "path": "/audio/voice_consents/{consent_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "updateWebhookEndpoint",
+      "wireOperationId": "UpdateWebhookEndpoint",
+      "method": "post",
+      "path": "/webhook_endpoints/{webhook_endpoint_id}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "uploadCertificate",
+      "wireOperationId": "uploadCertificate",
+      "method": "post",
+      "path": "/organization/certificates",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "usageAudioSpeeches",
+      "wireOperationId": "usageAudioSpeeches",
+      "method": "get",
+      "path": "/organization/usage/audio_speeches",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "usageAudioTranscriptions",
+      "wireOperationId": "usageAudioTranscriptions",
+      "method": "get",
+      "path": "/organization/usage/audio_transcriptions",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "usageCodeInterpreterSessions",
+      "wireOperationId": "usageCodeInterpreterSessions",
+      "method": "get",
+      "path": "/organization/usage/code_interpreter_sessions",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "usageCompletions",
+      "wireOperationId": "usageCompletions",
+      "method": "get",
+      "path": "/organization/usage/completions",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "usageCosts",
+      "wireOperationId": "usageCosts",
+      "method": "get",
+      "path": "/organization/costs",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "usageEmbeddings",
+      "wireOperationId": "usageEmbeddings",
+      "method": "get",
+      "path": "/organization/usage/embeddings",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "usageFileSearchCalls",
+      "wireOperationId": "usageFileSearchCalls",
+      "method": "get",
+      "path": "/organization/usage/file_search_calls",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "usageImages",
+      "wireOperationId": "usageImages",
+      "method": "get",
+      "path": "/organization/usage/images",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "usageModerations",
+      "wireOperationId": "usageModerations",
+      "method": "get",
+      "path": "/organization/usage/moderations",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "usageVectorStores",
+      "wireOperationId": "usageVectorStores",
+      "method": "get",
+      "path": "/organization/usage/vector_stores",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "usageWebSearchCalls",
+      "wireOperationId": "usageWebSearchCalls",
+      "method": "get",
+      "path": "/organization/usage/web_search_calls",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "validateanexternalkeyconfigfortheuserSorganization",
+      "wireOperationId": "validateanexternalkeyconfigfortheuserSorganization",
+      "method": "post",
+      "path": "/organization/external_keys/{external_key_id}/validate",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "validateanexternalstorageconfiguration",
+      "wireOperationId": "Validateanexternalstorageconfiguration",
+      "method": "post",
+      "path": "/organization/external_storage/{external_storage_id}/validate",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "validateGrader",
+      "wireOperationId": "validateGrader",
+      "method": "post",
+      "path": "/fine_tuning/alpha/graders/validate",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    }
+  ],
+  "models": 2371,
+  "modelCount": 2371,
+  "sourceFiles": 1886,
+  "testFiles": 3,
+  "sourceLines": 256862,
+  "averageSourceFileLines": 136.19,
+  "largestSourceFileLines": 14634,
+  "largestNonExemptSourceFileLines": 14634,
+  "sourceFileLineLimit": 1000,
+  "oversizedSourceFileExceptions": [],
+  "artifactBytes": 20679097,
+  "generatedUnitTests": 5,
+  "nativeExecutableTests": 5,
+  "sharedTestCaseDefinitions": 249,
+  "generatedTestCaseDefinitions": 249,
+  "renderedBehaviorCases": 0,
+  "behaviorKindsDeclared": [
+    "auth-application",
+    "binary-response",
+    "bytes-response",
+    "empty-response",
+    "error-response",
+    "header-serialization",
+    "json-request",
+    "json-response",
+    "multipart-request",
+    "nullable-model",
+    "object-query-serialization",
+    "pagination",
+    "path-serialization",
+    "query-serialization",
+    "sse-response",
+    "streaming",
+    "text-response"
+  ],
+  "behaviorKindsExercised": [],
+  "nativeBehaviorCoverageComplete": false,
+  "apiManifestPresent": true,
+  "apiManifestMatchesSchema": true,
+  "enumStrategy": "open",
+  "authoredContractTests": 52,
+  "authoredContractResponseModes": 52,
+  "synthesizedMockRoutes": 376,
+  "shadowedMockRoutes": 0,
+  "wireAliasMockRoutes": 0,
+  "publicSymbols": 10080,
+  "documentedPublicSymbols": 10080,
+  "authoredDocumentedPublicSymbols": 7976,
+  "synthesizedDocumentedPublicSymbols": 2104,
+  "documentationCoverage": 1,
+  "authoredDocumentationCoverage": 0.7912698412698412,
+  "nativeTestCountPassed": null,
+  "contractResponseModesPassed": null,
+  "formattingPassed": "pending",
+  "lintingPassed": "pending",
+  "compilationPassed": "pending",
+  "nativeTestsPassed": "pending",
+  "contractTestsPassed": "pending",
+  "packagePassed": "pending",
+  "consumerInstallPassed": "pending",
+  "pythonLintFix": null,
+  "pythonLint": null,
+  "warnings": [],
+  "blockingFailures": [],
+  "registryPackageBytes": null,
+  "deliveryReady": false,
+  "gateStates": {
+    "formatting": "pending",
+    "linting": "pending",
+    "compilation": "pending",
+    "nativeTests": "pending",
+    "contractTests": "pending",
+    "package": "pending",
+    "consumerInstall": "pending"
+  },
+  "releaseScorecard": {
+    "status": "pending",
+    "score": null,
+    "outOf": 10,
+    "releaseReady": false,
+    "blockers": [
+      "verification has not run"
+    ]
+  }
+}
